@@ -15,12 +15,12 @@ try {
     $mail->isSMTP();                             // 使用SMTP 
     $mail->Host = 'smtp.qq.com';                // SMTP服务器 
     $mail->SMTPAuth = true;                      // 允许 SMTP 认证 
-    $mail->Username = '1446929313@qq.com';                // SMTP 用户名  即邮箱的用户名 
-    $mail->Password = 'gxccurryiphegjcf';             // SMTP 密码  部分邮箱是授权码(例如163邮箱) 
+    $mail->Username = '您的邮箱';                // SMTP 用户名  即邮箱的用户名 
+    $mail->Password = '您的邮箱授权码';             // SMTP 密码  部分邮箱是授权码(例如163邮箱) 
     $mail->SMTPSecure = 'ssl';                    // 允许 TLS 或者ssl协议 
     $mail->Port = 465;                            // 服务器端口 25 或者465 具体要看邮箱服务器支持 
 
-    $mail->setFrom('aimu_c@qq.com', 'Mailer');  //发件人 
+    $mail->setFrom('您的邮箱', 'Mailer');  //发件人 
     $mail->addAddress("$sjr", 'Joe');  // 收件人 
     //$mail->addAddress('ellen@example.com');  // 可添加多个收件人 
     $mail->addReplyTo('aimu_c@qq.com', 'info'); //回复的时候回复给哪个邮箱 建议和发件人一致 
